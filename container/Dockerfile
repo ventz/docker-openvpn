@@ -8,7 +8,7 @@ VOLUME ["/etc/openvpn"]
 #RUN sysctl -w net.ipv4.ip_forward=1
 
 WORKDIR /etc/openvpn
-EXPOSE 1194
+EXPOSE 1194/udp
 
 COPY start-vpn.sh /
 
